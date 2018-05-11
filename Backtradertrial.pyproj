@@ -3,13 +3,13 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>4a3f4afd-6317-4053-bfce-7d76ef176426</ProjectGuid>
-    <ProjectHome>.</ProjectHome>
-    <StartupFile>Backtrader.py</StartupFile>
-    <SearchPath>
-    </SearchPath>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>NewFolder1\Backtrader.py</StartupFile>
+    <SearchPath>Backtradertrial</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>Backtrader</Name>
+    <Name>Backtradertrial</Name>
     <RootNamespace>Backtrader</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -21,7 +21,19 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Backtrader.py" />
+    <Compile Include="ibdatas.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NewFolder1\AddData.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NewFolder1\Backtrader.py" />
+    <Compile Include="NewFolder1\IBData.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
